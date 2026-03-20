@@ -3,7 +3,7 @@
 <head>
 <title> MouseOver </title>
 <style>
- body { font-family: 'Rokkit', serif; font-size: 20px; text-align: center; }
+ body { font-family: 'Georgia', serif; font-size: 20px; text-align: center; }
    th { font-size: 30px; }
 table {margin-left: auto; margin-right: auto; }
 
@@ -34,7 +34,7 @@ table {margin-left: auto; margin-right: auto; }
   background-color: #8510cf;
   color: #fff; }
 
-#table.d {
+#table .d {
   background-color: #55a7e6; }
 </style>
 </head>
@@ -74,7 +74,7 @@ table {margin-left: auto; margin-right: auto; }
  </table>
  
 <script>
-  table.onmouseover= function(event) {
+  table.onmouseover = function(event) {
   let target = event.target;
   target.style.background = 'pink';
    
