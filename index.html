@@ -63,3 +63,33 @@ background-color: #55a7e6; }
       <td class="p"><strong><u>Protein</u></strong>
         <br>Eggs
         <br>Chicken
+        <br>Fish
+      </td> 
+      <td class="d"><strong><u>Dairy</u></strong>
+        <br>Milk
+        <br>Cheese
+        <br>Yogurt
+      </td>
+    </tr>
+ </table>
+ 
+<script>
+  table.onmouseover= function(event) {
+  let target = event.target;
+  target.style.background = 'pink';
+   
+  text.value += `over-> ${target.tagName}\n`;
+  text.scrollTop = text.scrollHeight;
+  };
+ 
+table.onmouseout = function(event) {
+  let target = event.target;
+  target.style.background = '';
+
+  text.value += `out <- ${target.tagName}\n`;
+  text.scrollTop = text.scrollHeight;
+</script>
+<p>The <b>onmouseover</b> event occurs when the mouse pointer <i >enters</i> an element. </p>
+<p>The <b>onmouseout</b> event occurs when the mouse pointer <i>moves out</i> of an element.</p>
+</body>
+</html>
