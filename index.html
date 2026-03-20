@@ -3,7 +3,7 @@
 <head>
 <title> MouseOver </title>
 <style>
- body { font-family: Rockwell; font-size: 20px; text-align: center; }
+ body { font-family: 'Rokkit', serif; font-size: 20px; text-align: center; }
    th { font-size: 30px; }
 table {margin-left: auto; margin-right: auto; }
 
@@ -27,15 +27,15 @@ table {margin-left: auto; margin-right: auto; }
   background-color: #09b511;
   color: #fff; }
 
-#table.g {
-background-coor: #efec36; }
+#table .g {
+  background-color: #efec36; }
 
-#table p {
-background-color: #8510cf;
-color: #ff }
+#table .p {
+  background-color: #8510cf;
+  color: #fff; }
 
 #table.d {
-background-color: #55a7e6; }
+  background-color: #55a7e6; }
 </style>
 </head>
 
@@ -88,6 +88,7 @@ table.onmouseout = function(event) {
 
   text.value += `out <- ${target.tagName}\n`;
   text.scrollTop = text.scrollHeight;
+};
 </script>
 <p>The <b>onmouseover</b> event occurs when the mouse pointer <i >enters</i> an element. </p>
 <p>The <b>onmouseout</b> event occurs when the mouse pointer <i>moves out</i> of an element.</p>
